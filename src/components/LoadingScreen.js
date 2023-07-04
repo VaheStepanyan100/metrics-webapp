@@ -1,8 +1,8 @@
 import { styled } from 'styled-components';
 
 const LoadingScreen = () => (
-  <Container>
-    <Spinner />
+  <Container data-testid="loading-screen">
+    <Spinner data-testid="spinner" />
   </Container>
 );
 

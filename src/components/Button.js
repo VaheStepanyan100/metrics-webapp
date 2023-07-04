@@ -5,9 +5,10 @@ const Button = ({ children, url, iconName }) => (
   <NavLink
     className="bg-buttonFirstColor p-5 text-white flex flex-col justify-center items-center border-white border"
     to={`/${url}`}
+    data-testid="nav-link"
   >
     <span>
-      <ion-icon name={`${iconName}`} size="large" />
+      <ion-icon data-testid="icon" name={`${iconName}`} size="large" />
     </span>
     <span className="text-lg tracking-wider font-bold">{children}</span>
   </NavLink>
