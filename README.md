@@ -5,7 +5,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Matrics Webapp\] ](#-matrics-webapp-)
+- [📖 \[React capstone project - Metrics webapp\]](#-react-capstone-project---metrics-webapp)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -25,9 +25,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Matrics Webapp] <a name="about-project"></a>
+# 📖 [React capstone project - Metrics webapp] 
 
-**[Matrics Webapp]** is a...
+<a name="about-project"></a>
+
+**[The React capstone project]** is a Metrics web application aimed at tracking and analyzing data. It serves as a comprehensive tool for monitoring various metrics, providing users with a user-friendly interface to view and manage data. Built with React as its foundation, the project incorporates modern web development techniques, including Redux for state management, Tailwind CSS for styling, and Styled Components for enhanced component styling. This combination of technologies allows for efficient data tracking, intuitive user interactions, and visually appealing design elements, creating an intuitive and interactive experience for users.
 
 ## 🛠 Built With <a name="built-with"></a>
 
