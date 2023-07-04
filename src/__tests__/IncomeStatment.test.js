@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import IncomeStatement from '../components/incomeStatement';
+import IncomeStatement from '../components/IncomeStatement';
 
 test('renders the income statement correctly', () => {
   const company = [
