@@ -4,7 +4,7 @@ import getCompanyName from '../utils/getCompanyName';
 import Button from './Button';
 
 const RevenueGraph = ({ company }) => {
-  const companyName = getCompanyName(company[0].symbol);
+  const companyName = getCompanyName(company[0]?.symbol);
   const nthchildren = [1, 4, 5, 8];
   return (
     <Section
