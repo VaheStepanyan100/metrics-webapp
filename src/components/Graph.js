@@ -1,0 +1,65 @@
+import PropTypes from 'prop-types';
+import { Bar } from 'react-chartjs-2';
+// eslint-disable-next-line
+import { Chart as ChartJS } from 'chart.js/auto';
+// I had to use this comment as this import existence is crucial for the chart.js to work,
+// without being used
+import { styled } from 'styled-components';
+import getRevenueArr from '../utils/getRevenueArr';
+import getYearsArr from '../utils/getYearsArr';
+
+const Graph = ({ company }) => {
+  const yearsArr = getYearsArr(company);
+  const revenuArr = getRevenueArr(company);
+
+  const data = {
+    labels: yearsArr,
+    datasets: [
+      {
+        label: 'USD revenue in millions.',
+        data: revenuArr,
+        backgroundColor: ['#4268af', '#3f62a5'],
+        borderColor: 'white',
+        borderWidth: 2,
+      },
+    ],
+  };
+
+  const options = {
+    plugins: {
+      legend: {
+        labels: {
+          color: 'white',
+        },
+      },
+    },
+    scales: {
+      x: {
+        ticks: {
+          color: 'white',
+        },
+      },
+      y: {
+        ticks: {
+          color: 'white',
+        },
+      },
+    },
+  };
+  return (
+    <Section className="bg-headlineBg flex flex-col items-center">
+      <h1 className="text-white text-lg p-5 md:p-10">Revenue for the past 5 years</h1>
+      <div className="p-3 w-full md:px-44">
+        <Bar data={data} options={options} />
+      </div>
+    </Section>
+  );
+};
+
+Graph.propTypes = {
+  company: PropTypes.arrayOf(Object).isRequired,
+};
+
+export default Graph;
+
+const Section = styled.section``;
